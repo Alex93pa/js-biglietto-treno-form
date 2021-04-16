@@ -1,3 +1,10 @@
+
+function prezzoKm(){
+    prezzoKm = 0.21;
+    return prezzoKm;
+}
+
+
 var prezzo = kmPercorsi * 0.21
             
     if ( anni < 18){

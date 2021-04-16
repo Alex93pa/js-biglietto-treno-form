@@ -13,27 +13,27 @@
         <h2 class="center white">CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2>
         
         <form class="container-dati">
-            <div class="dati border">
-                <label class="nome border inline">
+            <div class="dati">
+                <label class="nome inline">
                     <h4 class="margin-15t center pink">Nome e Cognome</h4>
                     <input type="text" name="nomeCognome" placeholder="Nome e cognome">
                 </label>
             
-                <label class="km inline border">
+                <label class="km inline">
                     <h4 class="margin-15t center pink">Km da percorrere</h4>
                     <input type="text" name="km" placeholder="Km">
                 </label>
             
-                <label class="eta inline border">
+                <label class="eta inline">
                     <h4 class="margin-15t center pink">Fascia d'età</h4>
                     <select class="center" name="age" id="categoria">
-                        <option value="”">Under 18</option>
-                        <option value="”">18-65 anni</option>
-                        <option value="”">Over 65</option>
+                        <option value="Under18">Under 18</option>
+                        <option value="18-65">18-65 anni</option>
+                        <option value="Over65">Over 65</option>
                     </select>
                 </label>
             </div>
-            <div class="btn border">
+            <div class="btn">
                 <button> Genera</button>
 
                 <button type="reset">Annulla</button>
@@ -44,25 +44,28 @@
         <h2 class="center white">IL TUO BIGLIETTO</h2>
         
         <section class="container-ticket">
-            <h5>DETTAGLIO PASSEGGERI</h5>
+            <h4>DETTAGLIO PASSEGGERI</h4>
             <div class="dettagli-ticket">
 
                 <div class="info f-info center b-topbot">
-                    <h5>NOME PASSEGGERO</h5>
+                    <h4>NOME PASSEGGERO</h4>
+                    <h4 id="nome-passeggero">
+                        
+                    </h4>
                 </div>
                 <div class="info center inline b-topbot">
-                    <h5>Offerta</h5>
+                    <h4>Offerta</h4>
                 </div>
                 <div class="info center inline b-topbot">
-                    <h5>Carrozza</h5>
+                    <h4>Carrozza</h4>
                     
                 </div>
                 <div class="info center inline b-topbot">
-                    <h5>codice CP</h5>
+                    <h4>Codice CP</h4>
                     
                 </div>
                 <div class="info center inline b-topbot">
-                    <h5>Costo Biglietto</h5>
+                    <h4>Costo Biglietto</h4>
                     
                 </div>
             </div>
