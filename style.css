@@ -31,18 +31,24 @@
 .big-container{
     background-color: rgb(184, 60, 77);
     width: 100vw;
+    height: 100vh;
 }
 
 .container-dati{
     width: 70%;
     margin: auto;
     background-color: white;
-    border-radius: 5%;
+    border-radius: 13px;
     padding: 20px 50px;
 }
 
+.dati, .dettagli-ticket{
+    display: flex;
+    justify-content: center
+}
+
 .nome, .km, .eta{
-    width: 32%;
+    width: 33.3%;
     padding: 0 15px;
 }
 
@@ -50,3 +56,21 @@ input, select{
     margin: 15px 0;
 }
 
+.container-ticket{
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    padding: 10px;
+}
+
+.info{
+    width: 20%;
+}
+.b-topbot{
+    border-bottom: 2px solid gray;
+    border-top: 2px solid gray;
+
+}
+.f-info{
+    background-color: gray;
+}
