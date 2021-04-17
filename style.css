@@ -35,6 +35,10 @@
     height: 100vh;
 }
 
+.m-block{
+    padding-top: 20px;
+}
+
 .container-dati{
     width: 70%;
     margin: auto;
@@ -48,6 +52,10 @@
     justify-content: center
 }
 
+label{
+    margin: 25px;
+}
+
 .nome, .km, .eta{
     width: 33.3%;
     padding: 0 15px;
@@ -57,9 +65,13 @@ input, select{
     margin: 15px 0;
 }
 
+button{
+    padding: 5px 10px;
+}
+
 .btn{
     text-align: center;
-    padding: 20px 0px;
+    padding: 15px 0px;
 }
 
 .container-ticket{
@@ -79,4 +91,8 @@ input, select{
 }
 .f-info{
     background-color: gray;
+}
+
+.dettagli-ticket{
+    height: 100px;
 }

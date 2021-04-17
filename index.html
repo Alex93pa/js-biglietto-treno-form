@@ -10,37 +10,42 @@
 <body>
     <div class="big-container">
         <!-- PRIMO BLOCCO -->
-        <h2 class="center white">CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2>
-        
-        <form class="container-dati">
-            <div class="dati">
-                <label class="nome inline">
-                    <h4 class="margin-15t center pink">Nome e Cognome</h4>
-                    <input type="text" name="nomeCognome" placeholder="Nome e cognome">
-                </label>
-            
-                <label class="km inline">
-                    <h4 class="margin-15t center pink">Km da percorrere</h4>
-                    <input type="text" name="km" placeholder="Km">
-                </label>
-            
-                <label class="eta inline">
-                    <h4 class="margin-15t center pink">Fascia d'età</h4>
-                    <select class="center" name="age" id="categoria">
-                        <option value="Under18">Under 18</option>
-                        <option value="18-65">18-65 anni</option>
-                        <option value="Over65">Over 65</option>
-                    </select>
-                </label>
-            </div>
-            <div class="btn">
-                <button> Genera</button>
+        <div class="m-block">
 
-                <button type="reset">Annulla</button>
-            </div>
+            <h2 class="center white">CALCOLA IL PREZZO DEL TUO BIGLIETTO </h2>
+            
+            <form class="container-dati">
+                <div class="dati">
+                    <label class="nome inline">
+                        <h4 class="margin-15t center pink">Nome e Cognome</h4>
+                        <input type="text"  id="input-nome" placeholder="Nome e cognome">
+                    </label>
+            
+                    <label class="km inline">
+                        <h4 class="margin-15t center pink">Km da percorrere</h4>
+                        <input type="text" placeholder="Km" id="kmUtente">
+                    </label>
+                    
+                    <label class="eta inline">
+                        <h4 class="margin-15t center pink">Fascia d'età</h4>
+                        <select class="center" id="categoria">
+                            <option value="Under18">Under 18</option>
+                            <option value="18-65">18-65 anni</option>
+                            <option value="Over65">Over 65</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="btn">
+                    <button id="crea-ticket" type="button"> Genera</button>
+                    
+                    <button id="reset" type="reset">Annulla</button>
+                </div>
         </form>
+    </div>
         
         <!-- SECONDO BLOCCO -->
+    <div class="m-block">
+
         <h2 class="center white">IL TUO BIGLIETTO</h2>
         
         <section class="container-ticket">
@@ -49,29 +54,29 @@
 
                 <div class="info f-info center b-topbot">
                     <h4>NOME PASSEGGERO</h4>
-                    <h4 id="nome-passeggero">
-                        
-                    </h4>
+                    <h4 id="nome-passeggero"></h4>
                 </div>
                 <div class="info center inline b-topbot">
                     <h4>Offerta</h4>
+                    <div class="valore" id="offerta"></div>
                 </div>
                 <div class="info center inline b-topbot">
                     <h4>Carrozza</h4>
-                    
+                    <div class="valore" id="carrozza"></div>
                 </div>
                 <div class="info center inline b-topbot">
                     <h4>Codice CP</h4>
-                    
+                    <div class="valore" id="codice-CP"></div>
                 </div>
                 <div class="info center inline b-topbot">
                     <h4>Costo Biglietto</h4>
-                    
+                    <div class="costo" id="costoBiglietto"></div>
                 </div>
             </div>
         </section>
-    
-    
+    </div>
+        
+        
     </div>
     <script src="script.js"></script>
 </body>
