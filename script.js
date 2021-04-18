@@ -37,7 +37,6 @@ creaTicket.addEventListener('click', function () {
         document.getElementById("offerta").innerHTML = ("Standard")
     } 
 
-
     //numero Carrozza
     function randomNumberCarrozza() {
         var randomNumber = Math.floor(Math.random() *10 + 1);
