@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <link rel="stylesheet" href="style.css">
     <title>Biglietto treno</title>
 </head>
@@ -36,9 +40,9 @@
                     </label>
                 </div>
                 <div class="btn">
-                    <button id="crea-ticket" type="button"> Genera</button>
+                    <button id="crea-ticket" class="zoom" type="button"> Genera</button>
                     
-                    <button onclick="reset()">Annulla</button>
+                    <button class="zoom" onclick="reset()">Annulla</button>
                 </div>
         </form>
     </div>
@@ -53,7 +57,7 @@
             <div class="dettagli-ticket">
 
                 <div class="info f-info center b-topbot">
-                    <h4>NOME PASSEGGERO</h4>
+                    <h4>NOME <br> PASSEGGERO</h4>
                     <h4 class="valore" id="nome-passeggero"></h4>
                 </div>
                 <div class="info center inline b-topbot">
@@ -69,7 +73,7 @@
                     <div class="valore" id="codice-CP"></div>
                 </div>
                 <div class="info center inline b-topbot">
-                    <h4>Costo Biglietto</h4>
+                    <h4>Costo <br> Biglietto</h4>
                     <div class=" valore costo" id="costoBiglietto"></div>
                 </div>
             </div>

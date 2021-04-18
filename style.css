@@ -64,6 +64,7 @@ label{
 
 input, select {
     display: block;
+    max-width: 130px;
     margin: 15px auto;
 }
 
@@ -76,9 +77,13 @@ button{
     padding: 15px 0px;
 }
 
+.zoom:active {
+    transform: scale(1.5);
+}
 
 .container-ticket{
     width: 70%;
+    min-width: 550px;
     margin: auto;
     background-color: white;
     padding: 10px;
@@ -104,3 +109,11 @@ button{
     height: 200px;
 }
 
+
+@media screen and (max-width: 858px){
+    .nome, .km, .eta{
+        width: 50%;
+        margin: auto;
+    }
+
+}
